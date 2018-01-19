@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <button id="btn" onclick="getLoc()">按钮</button>
+  <p id="ptime"></p>
+  <script>
+    document.write("可用高度："+screen.availHeight+"，可用宽度："+screen.availWidth); //设备宽高
+    document.write(",高度："+screen.height+"，宽度："+screen.width);
+    document.write(",宽："+innerWidth+",高："+innerHeight); //读取浏览器窗口的内部宽高
+  </script>
+</body>
+</html>

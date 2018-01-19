@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div id="div" class="div">
+    Hello
+  </div>
+  <p id="pid">hello</p>
+  <p id="pid">hello</p>
+  <a id="aid" href="http://www.baidu.com">Hi</a>
+  <img id="imgid" src="1.jpg">
+  <button onclick="demo()">按钮</button>
+  <script>
+    function demo() {
+      // document.getElemntByTagName("p"); //寻找到相同元素的第一个（即返回数组中的第一个）
+      document.getElementById('aid').innerHTML = "world"; //更改Html元素的ID
+      document.getElementById('aid').href="http://www.hao123.com"; //更改属性的值
+      document.getElementById('imgid').src="2.jpg"; //更改属性的值
+      // document.getElementById('div').style.color = "blue"; //更改css
+    }
+  </script>
+</body>
+</html>

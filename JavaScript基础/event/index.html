@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<!-- 网页加载事件 -->
+<body onload="mgs()">
+  <!-- 单击事件——onclick -->
+  <button onclick="demo()">按钮</button>
+  <!-- 鼠标经过事件——onmouseover 鼠标移出事件——onmouseout -->
+  <div class="div" onmouseout="onOut(this)" onmouseover="onOver(this)"></div>
+  <script>
+  function demo(){
+    alert("hello");
+  }
+  function onOver(ooj) {
+    ooj.innerHTML = "Hello";
+  }
+  function onOut(ooj) {
+    ooj.innerHTML = "World";
+  }
+  </script>
+  <form>
+    <!-- 文本内容改变事件——onChange -->
+    <input type="text" onchange="changeDemo1(this)">
+    <!--简便写法：onchange="alert('hello,内容改变了')" -->
+    <!-- 文本框选中事件——onselect -->
+    <input type="text" onselect="changeDemo2(this)">
+    <!-- 光标聚集事件——onfocus -->
+    <input type="text" onfocus="changeDemo3(this)">
+  </form>
+  <script>
+    function changeDemo1(bg){
+      alert("Hello,内容改变了！");
+    }
+    function changeDemo2(bg){
+      bg.style.background = "red";
+    }
+    function changeDemo3(bg){
+      bg.style.background = "blue";
+    }
+    function mgs(){
+      alert("网页加载完毕");
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <button id="btn" onclick="getLoc()">按钮</button>
+  <p id="ptime"></p>
+  <script>
+    function getLoc(){
+      // document.getElementById("ptime").innerHTML = window.location.port;
+      //hostname——返回web主机域名
+      //pathname——返回当前页面的路径和文件名
+      //port——返回web主机端口
+      //href——返回当前页面的URL
+      //assign——加载新的文档,重新定义整个页面
+      location.assign("http://www.baidu.com");
+    }
+  </script>
+</body>
+</html>

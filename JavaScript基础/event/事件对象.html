@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div id="div">
+    <button id="btn1">按钮</button>
+    <a id="aid" href="http://www.baidu.com">ceshi</a>
+  </div>
+  <script>
+    document.getElementById('btn1').addEventListener("click",showType);
+    document.getElementById('div').addEventListener("click",showDiv);
+    document.getElementById('aid').addEventListener("click",showA);
+    function showType(event){
+      // alert(event.type); //事件类型
+      alert(event.target);  //事件目标
+      event.stopPropagation(); //阻止事件冒泡
+    }
+    function showDiv(){
+      alert("div");
+    }
+    function showA(event){
+      event.stopPropagation();
+      event.preventDefault(); //阻止事件默认行为，此处为禁止跳转链接
+    }
+  </script>
+</body>
+</html>
