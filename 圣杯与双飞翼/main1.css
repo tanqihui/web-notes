@@ -1,0 +1,77 @@
+p,span {
+  line-height: 20px;
+  font-size: 14px;
+}
+
+.container {
+  padding: 20px 170px 20px 250px;
+  margin: 20px;
+  background-color: #eee;
+  border: 1px solid #999999;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+.main,.left,.right {
+  background-color: white;
+  border: 1px solid #999999;
+}
+
+.main {
+  float: left;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.main h1,p,img {
+  margin: 10px;
+}
+
+.main img {
+  width: 300px;
+  height: 200px;
+}
+
+.conent {
+  text-indent: 2em;
+}
+
+.left {
+  width: 200px;
+  float: left;
+  margin-left: -100%;
+  box-sizing: border-box;
+  left: -220px;
+  position: relative;
+  padding: 10px;
+}
+
+.left span {
+  vertical-align: 66px;
+}
+
+.left img,
+.right img {
+  width: 80px;
+  height: 70px;
+}
+
+.right {
+  width: 120px;
+  float: left;
+  position: relative;
+  margin-left: -120px;
+  right: -140px;
+  box-sizing: border-box;
+}
+
+.right dl {
+  margin: 0 -30px 0 -30px;
+}
+
+.right dd {
+  text-align: center;
+  width: 100px;
+}
